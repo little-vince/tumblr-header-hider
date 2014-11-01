@@ -56,13 +56,13 @@ Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 Install the [Greasemonkey 
 Addon](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/).
 
-![Install Greasemonkey](screenshots/firefox/01grease?raw=true "Install 
+![Install Greasemonkey](screenshots/firefox/01grease.png?raw=true "Install 
 Greasemonkey")
 
 #### Step 2
 Click "Install Now" at the prompt and restart Firefox if necessary.
 
-![Accept prompt](scrrenshots/firefox/02prompt?raw=true "Accept prompt")
+![Accept prompt](scrrenshots/firefox/02prompt.png?raw=true "Accept prompt")
 
 #### Step 3
 Once Greasemonkey is installed, navigate to [this 

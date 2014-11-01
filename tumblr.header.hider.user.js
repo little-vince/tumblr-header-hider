@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Tumblr Header Hider
 // @description     Hides the Tumblr dashboard header on scroll
-// @version         0.3
+// @version         0.4
 // @grant           none
 // @author          little-vince
 // @namespace       http://little-vince.tumblr.com/
@@ -28,13 +28,14 @@ function addJQuery(callback) {
 
 // the guts of this userscript
 function main() {
-    var header = jQ(".l-header-container");
-    //add transition style
-    header.css({
-        "-webkit-transition": "all 0.2s ease-out",
-        "-moz-transition": "all 0.2s ease-out",
-        "transition": "all 0.2s ease-out"
-    });
+    var header = ".l-header-container";
+    
+    var style = "<style type='text/css'>" + header + " {" +
+        "-webkit-transition: all 0.2s ease-out;" +
+        "-moz-transition: all 0.2s ease-out;" +
+        "transition: all 0.2s ease-out;}" +
+        header + ".nope {opacity: 0; visibility: hidden;}</style>";
+    jQ("head").append(style);
 
     //Note, jQ replaces $ to avoid conflicts.
     jQ(window).scroll(
@@ -45,24 +46,24 @@ function main() {
             var dh = jQ(document).height();
             var wh = jQ(window).height();
             var currentTop = jQ(window).scrollTop();
-            //only activate when scrolled past header size
-            if (currentTop > header.height()) {
+            //only activate when scrolled past jQ(header) size
+            if (currentTop > jQ(header).height()) {
                 //osx inertia bounce top
                 if (currentTop <= 0) {
-                    header.css("opacity", "1");
+                    jQ(header).removeClass("nope");
                     this.previousTop = 0;
                 }
                 //osx inertia bounce bottom
                 else if (currentTop + wh >= dh) {
-                    header.css("opacity", "0");
+                    jQ(header).addClass("nope");
                     this.previousTop = dh;
                 }
                 //normal non-intertia scrolling
                 else {
                     if (currentTop < this.previousTop) {
-                        header.css("opacity", "1");
+                        jQ(header).removeClass("nope");
                     } else {
-                        header.css("opacity", "0");
+                        jQ(header).addClass("nope");
                     }
                     this.previousTop = currentTop;
                 }

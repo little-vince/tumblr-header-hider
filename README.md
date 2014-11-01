@@ -1,11 +1,9 @@
 Tumblr Header Hider
 ===================
 
-This is a userscript that hides the Tumblr Header after scrolling down and 
-shows it again when scrolling up.
+This is a userscript that hides the Tumblr header from your Dashboard when you 
+scroll down, and shows it again when you scroll up.
 
-Screenshot
-----------
 Here is what the final result looks like.
 
 ![Result of header hiding](screenshots/result.gif?raw=true "Result of head 

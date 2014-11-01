@@ -12,7 +12,7 @@ hiding")
 Installation
 ------------
 Choose your browser:
-* [Google Chrome](#chrome)
+* [Google Chrome](#google-chrome)
 * [Firefox](#firefox)
 
 ### Google Chrome

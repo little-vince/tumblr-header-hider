@@ -65,22 +65,17 @@ Click "Install Now" at the prompt and restart Firefox if necessary.
 ![Accept prompt](screenshots/firefox/02prompt.png?raw=true "Accept prompt")
 
 #### Step 3
-Once Greasemonkey is installed, navigate to [this 
-page](https://raw.githubusercontent.com/little-vince/tumblr-header-hider/master/tumblr.header.hider.user.js) 
-and you should see a yellow bar on top. Click "Install Script".
+Once Greasemonkey is installed, [click 
+here](https://raw.githubusercontent.com/little-vince/tumblr-header-hider/master/tumblr.header.hider.user.js) 
+and accept the following prompt.
 
-![Install Script](screenshots/firefox/03script.png?raw=true "Install Script")
-
-#### Step 4
-Accept the prompt.
-
-![Accept another prompt](screenshots/firefox/04promptagain.png?raw=true "Accept 
+![Accept another prompt](screenshots/firefox/03promptagain.png?raw=true "Accept 
 another prompt")
 
 #### Step 5
 Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 
-![Success](screenshots/firefox/05success.png?raw=true "Success")
+![Success](screenshots/firefox/04success.png?raw=true "Success")
 
 Changelog
 ---------

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           	Tumblr Hide Header
 // @description    	Hides the Tumblr dashboard header on scroll
-// @version        	0.2
+// @version        	0.3
 // @grant          	none
 // @author         	little-vince
 // @namespace      	http://little-vince.tumblr.com/
@@ -26,20 +26,45 @@ function addJQuery(callback) {
 
 // the guts of this userscript
 function main() {
-    var header = ".l-header-container";
-    // Note, jQ replaces $ to avoid conflicts.
+    var header = jQ(".l-header-container");
+    //add transition style
+    header.css({
+        "-webkit-transition": "all 0.2s ease-out",
+        "-moz-transition": "all 0.2s ease-out",
+        "transition": "all 0.2s ease-out"
+    });
+
+    //Note, jQ replaces $ to avoid conflicts.
     jQ(window).scroll(
         {
             previousTop: 0
         }, 
-        function () {
+        function() {
+            var dh = jQ(document).height();
+            var wh = jQ(window).height();
             var currentTop = jQ(window).scrollTop();
-            if (currentTop < this.previousTop) {
-                jQ(header).fadeIn(200);
-            } else {
-                jQ(header).fadeOut(200);
+            //only activate when scrolled past header size
+            if (currentTop > header.height()) {
+                //osx inertia bounce top
+                if (currentTop <= 0) {
+                    header.css("opacity", "1");
+                    this.previousTop = 0;
+                }
+                //osx inertia bounce bottom
+                else if (currentTop + wh >= dh) {
+                    header.css("opacity", "0");
+                    this.previousTop = dh;
+                }
+                //normal non-intertia scrolling
+                else {
+                    if (currentTop < this.previousTop) {
+                        header.css("opacity", "1");
+                    } else {
+                        header.css("opacity", "0");
+                    }
+                    this.previousTop = currentTop;
+                }
             }
-            this.previousTop = currentTop;
         }
     );
 }

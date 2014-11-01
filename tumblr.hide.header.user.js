@@ -1,16 +1,18 @@
 // ==UserScript==
-// @name           	Hide Tumblr Header
-// @description    	Hides the Tumblr header on scroll
-// @version        	0.1
+// @name           	Tumblr Hide Header
+// @description    	Hides the Tumblr dashboard header on scroll
+// @version        	0.2
 // @grant          	none
 // @author         	little-vince
 // @namespace      	http://little-vince.tumblr.com/
 // @include        	*www.tumblr.com/*
 // ==/UserScript==
 
-// load jQuery code by Erik Vergobbi Vold & Tyler G. Hicks-Wright
+// Last edited 1 November 2014
 
-// a function that loads jQuery and calls a callback function when jQuery has finished loading
+// load jQuery code by Erik Vergobbi Vold & Tyler G. Hicks-Wright
+// a function that loads jQuery and calls a callback function when jQuery has 
+// finished loading
 function addJQuery(callback) {
     var script = document.createElement("script");
     script.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
@@ -24,6 +26,7 @@ function addJQuery(callback) {
 
 // the guts of this userscript
 function main() {
+    var header = ".l-header-container";
     // Note, jQ replaces $ to avoid conflicts.
     jQ(window).scroll(
         {
@@ -32,9 +35,9 @@ function main() {
         function () {
             var currentTop = jQ(window).scrollTop();
             if (currentTop < this.previousTop) {
-                jQ(".l-header-container").show(200);
+                jQ(header).fadeIn(200);
             } else {
-                jQ(".l-header-container").hide(200);
+                jQ(header).fadeOut(200);
             }
             this.previousTop = currentTop;
         }

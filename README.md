@@ -72,7 +72,7 @@ and accept the following prompt.
 ![Accept another prompt](screenshots/firefox/03promptagain.png?raw=true "Accept 
 another prompt")
 
-#### Step 5
+#### Step 4
 Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 
 ![Success](screenshots/firefox/04success.png?raw=true "Success")

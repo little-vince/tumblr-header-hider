@@ -12,14 +12,15 @@ hiding")
 Installation
 ------------
 Choose your browser:
-* [Google Chrome](#google-chrome)
+* [Google Chrome](#chrome)
 * [Firefox](#firefox)
 
 ### Google Chrome
 
 **Note: Windows Users will first have to install the [Tampermonkey 
 extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en-US) 
-and attempt to follow the [Firefox](#firefox) instructions.**
+and attempt to follow the [Firefox](#firefox) instructions using Tampermonkey 
+instead of Greasemonkey.**
 
 #### Step 1
 [Download the 

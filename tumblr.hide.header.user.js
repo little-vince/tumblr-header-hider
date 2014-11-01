@@ -1,11 +1,13 @@
 // ==UserScript==
-// @name           	Tumblr Hide Header
-// @description    	Hides the Tumblr dashboard header on scroll
-// @version        	0.3
-// @grant          	none
-// @author         	little-vince
-// @namespace      	http://little-vince.tumblr.com/
-// @include        	*www.tumblr.com/*
+// @name            Tumblr Hide Header
+// @description     Hides the Tumblr dashboard header on scroll
+// @version         0.3
+// @grant           none
+// @author          little-vince
+// @namespace       http://little-vince.tumblr.com/
+// @include         *www.tumblr.com/*
+// @updateURL       https://raw.githubusercontent.com/little-vince/tumblr-hide-header/master/tumblr.hide.header.user.js
+// @downloadURL     https://raw.githubusercontent.com/little-vince/tumblr-hide-header/master/tumblr.hide.header.user.js
 // ==/UserScript==
 
 // Last edited 1 November 2014

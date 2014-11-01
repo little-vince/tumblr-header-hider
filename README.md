@@ -17,6 +17,10 @@ Choose your browser:
 
 ### Google Chrome
 
+**Note: Windows Users will first have to install the [Tampermonkey 
+extension](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en-US) 
+and attempt to follow the [Firefox](#firefox) instructions.**
+
 #### Step 1
 [Download the 
 script](https://raw.githubusercontent.com/little-vince/tumblr-header-hider/master/tumblr.header.hider.user.js)

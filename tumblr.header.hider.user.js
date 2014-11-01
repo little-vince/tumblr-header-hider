@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Tumblr Header Hider
 // @description     Hides the Tumblr dashboard header on scroll
-// @version         0.4
+// @version         0.5
 // @grant           none
 // @author          little-vince
 // @namespace       http://little-vince.tumblr.com/
@@ -68,6 +68,10 @@ function main() {
                     }
                     this.previousTop = currentTop;
                 }
+            } else {
+                //handle jumping to top of page
+                jQ(header).removeClass("nope");
+                this.previousTop = currentTop;
             }
         }
     );

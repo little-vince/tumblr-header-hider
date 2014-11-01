@@ -13,8 +13,11 @@ hiding")
 
 Installation
 ------------
+Choose your browser:
+* [Google Chrome](#chrome)
+* [Firefox](#firefox)
 
-### Chrome
+### Google Chrome
 
 #### Step 1
 [Download the 
@@ -47,6 +50,38 @@ Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 
 ![Success](screenshots/chrome/05success.png?raw=true "Success")
 
+### Firefox
+
+#### Step 1
+Install the [Greasemonkey 
+Addon](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/).
+
+![Install Greasemonkey](screenshots/firefox/01grease?raw=true "Install 
+Greasemonkey")
+
+#### Step 2
+Click "Install Now" at the prompt and restart Firefox if necessary.
+
+![Accept prompt](scrrenshots/firefox/02prompt?raw=true "Accept prompt")
+
+#### Step 3
+Once Greasemonkey is installed, navigate to [this 
+page](https://raw.githubusercontent.com/little-vince/tumblr-header-hider/master/tumblr.header.hider.user.js) 
+and you should see a yellow bar on top. Click "Install Script".
+
+![Install Script](screenshots/firefox/03script.png?raw=true "Install Script")
+
+#### Step 4
+Accept the prompt.
+
+![Accept another prompt](screenshots/firefox/04promptagain.png?raw=true "Accept 
+another prompt")
+
+#### Step 5
+Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
+
+![Success](screenshots/firefox/05success.png?raw=true "Success")
+
 Changelog
 ---------
 
@@ -66,6 +101,6 @@ More Userscripts
 ----------------
 Check out my other userscripts:
 * [Tumblr MP3 Downloader](https://github.com/little-vince/tumblr-download)
-* [Tumblr Header Hider](https://github.com/little-vince/tumblr-header-hider)
-* [Google Play Music Close Prompt](https://github.com/little-vince/google-music-prompt)
+* [Google Play Music Close 
+  Prompt](https://github.com/little-vince/google-music-prompt)
 * [Memrise Course Pinner](https://github.com/little-vince/memrise-pinner)

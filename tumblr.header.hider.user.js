@@ -38,6 +38,7 @@ function main() {
     jQ("head").append(style);
 
     //Note, jQ replaces $ to avoid conflicts.
+    //based off nav bar hiding code by Marc Audet
     jQ(window).scroll(
         {
             previousTop: 0

@@ -62,7 +62,7 @@ Greasemonkey")
 #### Step 2
 Click "Install Now" at the prompt and restart Firefox if necessary.
 
-![Accept prompt](scrrenshots/firefox/02prompt.png?raw=true "Accept prompt")
+![Accept prompt](screenshots/firefox/02prompt.png?raw=true "Accept prompt")
 
 #### Step 3
 Once Greasemonkey is installed, navigate to [this 

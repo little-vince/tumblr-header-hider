@@ -10,7 +10,7 @@
 // @downloadURL     https://raw.githubusercontent.com/little-vince/tumblr-header-hider/master/tumblr.header.hider.user.js
 // ==/UserScript==
 
-// Last edited 1 November 2014
+// Last edited 2 November 2014
 
 // load jQuery code by Erik Vergobbi Vold & Tyler G. Hicks-Wright
 // a function that loads jQuery and calls a callback function when jQuery has 

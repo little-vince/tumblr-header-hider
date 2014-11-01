@@ -78,6 +78,9 @@ Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 Changelog
 ---------
 
+#### 0.5 (141102)
+* Fix header not showing when jumping to top of page
+
 #### 0.4 (141101)
 * Actually remove the bar -- not just transparent
 

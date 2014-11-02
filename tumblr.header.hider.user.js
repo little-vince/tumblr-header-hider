@@ -64,14 +64,17 @@ function main() {
                 //normal non-intertia scrolling
                 else {
                     if (currentTop < this.previousTop) {
+                        //scrolling up (show header)
                         jQ(header).removeClass(hidden);
                     } else {
+                        //scrolling down (hide header)
                         jQ(header).addClass(hidden);
                     }
                     this.previousTop = currentTop;
                 }
-            } else {
-                //handle jumping to top of page
+            }
+            //handle jumping to top of page
+            else {
                 jQ(header).removeClass(hidden);
                 this.previousTop = currentTop;
             }

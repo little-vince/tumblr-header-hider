@@ -29,12 +29,14 @@ function addJQuery(callback) {
 // the guts of this userscript
 function main() {
     var header = ".l-header-container";
+    var hidden = "nope"; //name of the hidden class name
+    var fade = 0.2; //time of fade animation in seconds
     
     var style = "<style type='text/css'>" + header + " {" +
-        "-webkit-transition: all 0.2s ease-out;" +
-        "-moz-transition: all 0.2s ease-out;" +
-        "transition: all 0.2s ease-out;}" +
-        header + ".nope {opacity: 0; visibility: hidden;}</style>";
+        "-webkit-transition: all " + fade + "s ease-out;" +
+        "-moz-transition: all " + fade + "s ease-out;" +
+        "transition: all " + fade + "s ease-out;}" +
+        header + "." + hidden + " {opacity: 0; visibility: hidden;}</style>";
     jQ("head").append(style);
 
     //Note, jQ replaces $ to avoid conflicts.
@@ -51,26 +53,26 @@ function main() {
             if (currentTop > jQ(header).height()) {
                 //osx inertia bounce top
                 if (currentTop <= 0) {
-                    jQ(header).removeClass("nope");
+                    jQ(header).removeClass(hidden);
                     this.previousTop = 0;
                 }
                 //osx inertia bounce bottom
                 else if (currentTop + wh >= dh) {
-                    jQ(header).addClass("nope");
+                    jQ(header).addClass(hidden);
                     this.previousTop = dh;
                 }
                 //normal non-intertia scrolling
                 else {
                     if (currentTop < this.previousTop) {
-                        jQ(header).removeClass("nope");
+                        jQ(header).removeClass(hidden);
                     } else {
-                        jQ(header).addClass("nope");
+                        jQ(header).addClass(hidden);
                     }
                     this.previousTop = currentTop;
                 }
             } else {
                 //handle jumping to top of page
-                jQ(header).removeClass("nope");
+                jQ(header).removeClass(hidden);
                 this.previousTop = currentTop;
             }
         }

@@ -80,6 +80,10 @@ function main() {
             }
         }
     );
+
+    //change notification colour back to red and white
+    jQ(".tab_notice").css("background-color", "#D95E40");
+    jQ(".tab_notice_value").css("color", "#FFF");
 }
 
 // load jQuery and execute the main function

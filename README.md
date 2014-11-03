@@ -83,6 +83,9 @@ Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 Changelog
 ---------
 
+#### 0.6 (141103)
+* Change notification colours back to red and white
+
 #### 0.5 (141102)
 * Fix header not showing when jumping to top of page
 

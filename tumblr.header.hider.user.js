@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Tumblr Header Hider
 // @description     Hides the Tumblr dashboard header on scroll
-// @version         0.5
+// @version         0.6
 // @grant           none
 // @author          little-vince
 // @namespace       http://little-vince.tumblr.com/
@@ -10,7 +10,7 @@
 // @downloadURL     https://raw.githubusercontent.com/little-vince/tumblr-header-hider/master/tumblr.header.hider.user.js
 // ==/UserScript==
 
-// Last edited 2 November 2014
+// Last edited 3 November 2014
 
 // load jQuery code by Erik Vergobbi Vold & Tyler G. Hicks-Wright
 // a function that loads jQuery and calls a callback function when jQuery has 

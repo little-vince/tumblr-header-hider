@@ -31,13 +31,19 @@ function main() {
     var header = ".l-header-container";
     var hidden = "nope"; //name of the hidden class name
     var fade = 0.2; //time of fade animation in seconds
+    var notifbg = "#D95E40";
+    var notiftxtbg = "#FFF";
     
-    var style = "<style type='text/css'>" + header + " {" +
+    var style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = header + " {" +
         "-webkit-transition: all " + fade + "s ease-out;" +
         "-moz-transition: all " + fade + "s ease-out;" +
-        "transition: all " + fade + "s ease-out;}" +
-        header + "." + hidden + " {opacity: 0; visibility: hidden;}</style>";
-    jQ("head").append(style);
+        "transition: all " + fade + "s ease-out}" +
+        header + "." + hidden + " {opacity: 0; visibility: hidden}" +
+        ".tab_notice {background-color: " + notifbg + "!important}" +
+        ".tab_notice_value {color: " + notiftxtbg + "!important}";
+    document.head.appendChild(style);
 
     //Note, jQ replaces $ to avoid conflicts.
     //based off nav bar hiding code by Marc Audet
@@ -80,10 +86,6 @@ function main() {
             }
         }
     );
-
-    //change notification colour back to red and white
-    jQ(".tab_notice").css("background-color", "#D95E40");
-    jQ(".tab_notice_value").css("color", "#FFF");
 }
 
 // load jQuery and execute the main function

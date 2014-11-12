@@ -54,15 +54,12 @@ Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 ![Success](screenshots/chrome/05success.png?raw=true "Success")
 
 ### Firefox
+<del>
 
-> **Update: There seems to be an issue on Firefox where when you go to edit a 
-> post, the body of the script gets inserted into the post.**
-> 
-> I have no idea why this is happening and it doesn't seem to occur on Chrome. 
-> I'll try find a solution when my exams are over but for now: if you're an end 
-> user, you can consider disabling the addon or removing the script text at the 
-> end of each post (a huge hassle I know, I'm sorry), or if you're a developer 
-> and you know the cause of the issue and know a solution, please let me know!
+~~There seems to be an issue on Firefox where when you go to edit a post, the body of the script gets inserted into the post.~~
+
+
+> **Update: [mxcleod](http://www.mxcleod.tumblr.com) fixed the issue, everything should be working correctly now**
 
 #### Step 1
 Install the [Greasemonkey 
@@ -91,6 +88,9 @@ Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 
 Changelog
 ---------
+
+#### 0.7 (141112)
+* mxcleod fixed the bug in firefox where it would append code to each post
 
 #### 0.6 (141103)
 * Change notification colours back to red and white

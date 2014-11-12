@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Tumblr Header Hider
 // @description     Hides the Tumblr dashboard header on scroll
-// @version         0.6
+// @version         0.7
 // @grant           none
 // @author          little-vince
 // @namespace       http://little-vince.tumblr.com/
@@ -10,7 +10,8 @@
 // @downloadURL     https://raw.githubusercontent.com/little-vince/tumblr-header-hider/master/tumblr.header.hider.user.js
 // ==/UserScript==
 
-// Last edited 3 November 2014
+// Last edited 12 November 2014 by mxcleod.tumblr.com
+//fixed for firefox by mxcleod
 
 // load jQuery code by Erik Vergobbi Vold & Tyler G. Hicks-Wright
 // a function that loads jQuery and calls a callback function when jQuery has 
@@ -21,9 +22,11 @@ function addJQuery(callback) {
     script.addEventListener('load', function() {
         var script = document.createElement("script");
         script.textContent = "window.jQ=jQuery.noConflict(true);(" + callback.toString() + ")();";
-        document.body.appendChild(script);
+        
+        //instead of appending to the body, its appending to the head tag, no longer putting it inside text boxes on tumblr -mxcleod
+        document.head.appendChild(script);
     }, false);
-    document.body.appendChild(script);
+    document.head.appendChild(script);
 }
 
 // the guts of this userscript

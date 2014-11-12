@@ -55,8 +55,8 @@ Success! Navigate to [Tumblr](http://www.tumblr.com) to check it action!
 
 ### Firefox
 
-> *Update: There seems to be an issue on Firefox where when you go to edit a 
-> post, the body of the script gets inserted into the post.*
+> **Update: There seems to be an issue on Firefox where when you go to edit a 
+> post, the body of the script gets inserted into the post.**
 > 
 > I have no idea why this is happening and it doesn't seem to occur on Chrome. 
 > I'll try find a solution when my exams are over but for now: if you're an end 
